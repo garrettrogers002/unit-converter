@@ -27,11 +27,14 @@ public class Unit_converter {
             outputStream.flush();
             exchange.close();
            });
+
+           server.start();
+           System.out.println("Server started on port 8080");
         } catch (Exception e) {
             System.out.println("Error creating server: " + e.getLocalizedMessage());
         }
-        Unit_converter unit_converter = new Unit_converter();
-        System.out.println(unit_converter);
-        System.out.println("Hello World!");
+        // Unit_converter unit_converter = new Unit_converter();
+        // System.out.println(unit_converter);
+        // System.out.println("Hello World!");
     }
 }
